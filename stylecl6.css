@@ -1,0 +1,399 @@
+@font-face {
+  font-family: 'CalebGrotesk';
+  src: url(fonts/calebgroteskbold.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: #E1E2E5;
+    font-family: 'CalebGrotesk', sans-serif;
+  }
+
+ /* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 3px solid #B3B3B3;
+    padding: 0 20px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.icons{
+  display: flex;
+      gap: 20px;
+      position: absolute;
+      right: 20px;
+  }
+
+
+.material-symbols-outlined a {
+  text-decoration: none; 
+  outline: none; 
+  color: inherit; 
+}
+
+.material-symbols-outlined a:focus,
+.material-symbols-outlined a:active {
+  outline: none; 
+  color: inherit; 
+}
+
+.material-symbols-outlined a:hover {
+  text-decoration: none; 
+  color: #3F55C4; 
+}
+
+.material-symbols-rounded a {
+  text-decoration: none; 
+  outline: none; 
+  color: inherit; 
+}
+
+.material-symbols-rounded a:focus,
+.material-symbols-rounded a:active {
+  outline: none; 
+  color: inherit; 
+}
+
+.material-symbols-rounded a:hover {
+  text-decoration: none; 
+  color: #3F55C4; 
+}
+/* Logo Styling */
+.navbar .logo {
+    font-family: 'CalebGrotesk', monospace;
+    font-weight: 700;
+    font-size: 26px;
+    color: #000;
+    white-space: nowrap; 
+    position: absolute;
+    left: 20px;
+}
+
+/* Menu Styling */
+.menu {
+    display: flex;
+    gap: 30px; 
+    font-family: 'CalebGrotesk', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Menu Links */
+.navbar .menu a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    white-space: nowrap; 
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.navbar .menu a.active {
+  color: #3F55C4;
+  font-weight: 700;
+  position: relative; 
+  padding-bottom: 5px; 
+}
+
+.navbar .menu a.active::after {
+  content: '';
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%);
+  bottom: 0; 
+  width: 50%; 
+  height: 2px; 
+  background-color: #3F55C4;
+}
+
+.navbar .menu a:hover {
+  color: #3F55C4; 
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; 
+        height: auto; 
+        padding: 10px;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        gap: 15px; 
+        width: 100%; 
+        align-items: center; 
+        margin-top: 10px;
+    }
+}
+
+div.pagedir{
+    text-align: center;
+    margin-top: 100px;
+}
+
+div.pagedir h1{
+    font-size: 150%;
+}
+div.pagedir a{
+    color: #BFBFBF;
+    text-decoration: none;
+}
+
+div.productinf{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+div.productinf img{
+    width: 40%;
+}
+div.inf{
+    text-align: end;
+    margin-right: 10%;
+    
+}
+div.inf h1{
+    font-size: 400%;
+}
+div.inf h2{
+    font-size: 300%;
+    margin-top: -60px;
+}
+div.inf p{
+    text-align: justify;
+    margin-left: 150px;
+    font-size: 200%;
+}
+
+div.select {
+    margin-left: 420px;
+    display: flex;                        
+    text-align: end;                 
+    justify-content: space-between;              
+    padding: 20px;                      
+    border-radius: 10px;                 
+    gap: 15px;                           
+}
+div.select .label1 label{         
+    text-align: center; 
+    margin-left: 39px;                       
+}
+div.select .label2 label{         
+    text-align: center; 
+    margin-left: 24px;                       
+}
+
+div.select form.ProductSel {
+    text-align: end;      
+    display: flex;                       
+    align-items: center;                
+    gap: 20px;                           
+}
+
+div.select form.ProductSel div {
+    text-align: end;      
+    display: flex;                       
+    flex-direction: column;              
+    align-items: start;                  
+    gap: 5px;                            
+}
+
+.label1 option{
+  font-family: 'CalebGrotesk', sans-serif;
+}
+
+.label2 option{
+  font-family: 'CalebGrotesk', sans-serif;
+}
+#dropdown{
+  font-family: 'CalebGrotesk', sans-serif;
+}
+
+
+select {text-align: center;      
+    width: 120px;                    
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'CalebGrotesk', sans-serif;
+    
+}
+
+input[type="submit"] {
+    padding: 10px 40px;                  
+    background-color: #4267B2;           
+    color: white;                        
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'CalebGrotesk', sans-serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #365899;           
+}
+
+.rel-section {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .rel-section h2 {
+    font-family: 'CalebGrotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 95px;
+  }
+
+  .rel-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .rel-item {
+    background: #C2C1C1;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .rel-item-cont {
+    border-radius: 20px;
+    width: 20%;
+    min-width: 250px;
+    height: 475px;
+    padding: 10px;
+    margin: 30px 80px 30px 80px;
+  }
+  
+  .rel-item img {
+    width: 95%;
+    border-radius: 20px;
+  }
+  div.rel h1{ 
+        text-align: center;
+        margin-top: -150px
+  }
+  h3 {
+    margin-top: 20px;
+  }
+.oth-section{
+    text-align: center;
+}
+  .oth-items {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .oth-item {
+    background: transparent;
+    border-radius: 20px;
+    width: 5%;
+    min-width: 250px;
+    height: 375px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .oth-item img {
+    width: 70%;
+    border-radius: 20px;
+  }
+
+
+  .footer {
+    background: #4D525D;
+    color: #BEBEBE;
+    padding: 30px;
+    font-family: 'CalebGrotesk', sans-serif;
+    margin-top: 50px;
+    display: flex;
+  }
+  .footer > div {
+    flex: 1; 
+    margin: 0 10px;
+}
+
+  .footer h1 {
+      font-size: 25px;
+      margin-bottom: 10px;
+      color: #fff;
+  }
+
+  .footer a {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: justify;
+      display: block; 
+  }
+
+  .fbrand h1{
+    color: white;
+    margin-top: auto;
+    margin-right: 170px;text-align: left;
+  }
+  .fbrand a{
+    text-align: justify;
+  }
+  .fcopyrights h1{
+    color: white;
+    margin-top: auto;text-align: left;
+  }
+  .fcontact h1{
+    color: white;
+    margin-top: auto;
+    text-align: left;
+  }
+
+  .ffollowus social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .ffollowus h1{
+    color: white;
+    margin-top: auto;
+    text-align: left;
+  }
+  .ffollowus a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.ffollowus i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.ffollowus a:hover i {
+    color: #FFFFFF 
+}
+
+.chcksrctext{
+  color: black;
+}
